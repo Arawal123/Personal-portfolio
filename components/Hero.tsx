@@ -114,10 +114,10 @@ export default function Hero() {
       aria-label="Arawal Shukla opening portrait"
     >
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-[#d8d0c4]" />
-      <div className="page-shell relative grid min-h-[calc(100vh-7rem)] grid-cols-1 items-center gap-10 py-10 lg:grid-cols-[0.92fr_1.08fr] lg:gap-0">
+      <div className="page-shell relative grid min-h-[calc(100vh-7rem)] grid-cols-1 items-center gap-10 py-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-0">
         <div
           ref={textRef}
-          className="relative z-10 max-w-[920px] text-center lg:order-1 lg:-mr-28 lg:text-left"
+          className="relative z-10 max-w-[820px] text-center lg:order-1 lg:-mr-20 lg:text-left"
         >
           <p
             data-hero-line
@@ -125,26 +125,26 @@ export default function Hero() {
           >
             {site.education}
           </p>
-          <h1 className="serif-display text-balance text-[clamp(5.2rem,16vw,15rem)] leading-[0.78] text-[#171717]">
+          <h1 className="serif-display text-balance text-[clamp(4.6rem,12.6vw,12rem)] leading-[0.8] text-[#171717]">
             <span data-hero-line className="block">
               Arawal
             </span>
-            <span data-hero-line className="block lg:pl-[13vw]">
+            <span data-hero-line className="block lg:pl-[10vw]">
               Shukla
             </span>
           </h1>
           <p
             data-hero-line
-            className="mx-auto mt-8 max-w-sm text-sm uppercase tracking-[0.32em] text-[#6f6a63] lg:mx-0 lg:ml-[13vw]"
+            className="mx-auto mt-8 max-w-sm text-sm uppercase tracking-[0.32em] text-[#6f6a63] lg:mx-0 lg:ml-[10vw]"
           >
             {site.role}
           </p>
         </div>
 
-        <div className="relative z-0 mx-auto w-full max-w-[720px] lg:order-2">
+        <div className="relative z-0 mx-auto w-full max-w-[650px] lg:order-2">
           <div
             ref={imageRef}
-            className="relative mx-auto aspect-[0.83] min-h-[520px] overflow-hidden bg-[#efe9df] shadow-[0_48px_120px_rgba(23,23,23,0.12)] sm:min-h-[640px] lg:min-h-[76vh]"
+            className="relative mx-auto aspect-[0.83] min-h-[500px] overflow-hidden bg-[#efe9df] shadow-[0_48px_120px_rgba(23,23,23,0.12)] sm:min-h-[600px] lg:min-h-[68vh]"
           >
             <Image
               src="/images/arawal-red.jpg"
