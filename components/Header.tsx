@@ -49,14 +49,6 @@ export default function Header() {
             </a>
           ))}
         </div>
-        <a
-          href={site.linkedin}
-          target="_blank"
-          rel="noreferrer"
-          className="focus-ring hidden border-b border-[#171717]/30 pb-1 text-[#171717] transition-colors duration-500 hover:text-[#9b7b5a] sm:inline-flex"
-        >
-          LinkedIn
-        </a>
       </nav>
     </header>
   );
