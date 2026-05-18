@@ -24,8 +24,7 @@ export default function Projects() {
     const query = searchQuery.trim().toLowerCase();
 
     return projects.filter((project) => {
-      if (project.category !== activeCategory) return false;
-      if (!query) return true;
+      if (!query) return project.category === activeCategory;
 
       return [
         project.title,
@@ -55,12 +54,13 @@ export default function Projects() {
         >
           <p className="label justify-center">Selected Work</p>
           <div className="group/search mx-auto mt-10 flex max-w-6xl flex-col items-center justify-center gap-6 md:flex-row md:gap-8">
-            <h2 className="serif-display text-balance text-[clamp(3.8rem,8vw,8.8rem)] leading-[0.88] text-[#171717] transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] md:group-hover/search:-translate-x-8 md:group-focus-within/search:-translate-x-8">
+            <h2 className="serif-display text-balance text-[clamp(3.8rem,8vw,8.8rem)] leading-[0.88] text-[#171717] transition-transform duration-[700ms] ease-[cubic-bezier(0.22,1,0.36,1)] md:group-hover/search:-translate-x-5 md:group-focus-within/search:-translate-x-5">
               Recent works.
             </h2>
 
-            <label className="focus-within:w-[min(82vw,28rem)] group/searchbar relative flex h-16 w-16 shrink-0 items-center overflow-hidden border border-[#b9ad9d] bg-[#f7f4ef]/78 transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:w-[min(82vw,28rem)]">
-              <span className="pointer-events-none grid h-16 w-16 shrink-0 place-items-center text-[#171717] transition-transform duration-700 group-hover/searchbar:scale-90">
+            <label className="group/searchbar relative flex h-16 w-[min(82vw,28rem)] shrink-0 items-center">
+              <span className="pointer-events-none absolute inset-y-0 left-0 w-full origin-left scale-x-[0.145] border border-[#b9ad9d] bg-[#f7f4ef]/78 transition-transform duration-[700ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover/searchbar:scale-x-100 group-focus-within/searchbar:scale-x-100" />
+              <span className="pointer-events-none relative z-10 grid h-16 w-16 shrink-0 place-items-center text-[#171717] transition-transform duration-700 group-hover/searchbar:scale-90 group-focus-within/searchbar:scale-90">
                 <svg
                   aria-hidden="true"
                   viewBox="0 0 24 24"
@@ -80,7 +80,7 @@ export default function Projects() {
                 onChange={(event) => setSearchQuery(event.target.value)}
                 placeholder="Search works"
                 aria-label="Search works"
-                className="h-full min-w-0 flex-1 bg-transparent pr-5 text-sm font-bold uppercase tracking-[0.24em] text-[#171717] opacity-0 outline-none transition-opacity duration-500 placeholder:text-[#6f6a63]/70 group-hover/searchbar:opacity-100 group-focus-within/searchbar:opacity-100"
+                className="relative z-10 h-full min-w-0 flex-1 bg-transparent pr-5 text-sm font-bold uppercase tracking-[0.24em] text-[#171717] opacity-0 outline-none transition-[opacity,transform] duration-500 placeholder:text-[#6f6a63]/70 group-hover/searchbar:translate-x-0 group-hover/searchbar:opacity-100 group-focus-within/searchbar:translate-x-0 group-focus-within/searchbar:opacity-100 md:-translate-x-3"
               />
             </label>
           </div>
