@@ -49,6 +49,7 @@ html.lenis body {
 
 body {
   min-height: 100vh;
+  width: 125%;
   overflow-x: hidden;
   background:
     linear-gradient(90deg, rgba(216, 208, 196, 0.26) 1px, transparent 1px),
@@ -58,6 +59,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), Manrope, Inter, ui-sans-serif, system-ui, sans-serif;
   letter-spacing: 0;
+  zoom: 0.8;
 }
 
 body::before {

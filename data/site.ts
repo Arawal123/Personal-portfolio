@@ -42,6 +42,7 @@ export const projects = [
     eyebrow: "Foundations of Data Science Project",
     description:
       "An interactive geospatial analytics dashboard visualizing hotspot and coldspot patterns across city wards using spatial significance and ward-level metrics.",
+    category: "Others",
     tags: ["Data Science", "Geospatial Analytics", "Dashboard"],
     image: "/projects/fds-map.jpg",
     linkLabel: "GitHub",
@@ -54,6 +55,7 @@ export const projects = [
     eyebrow: "Pathfinding Visualizer",
     description:
       "A visual tool for exploring shortest-path algorithms and scenario-based routing with interactive grids, metrics, and path comparisons.",
+    category: "Data Structure and Algorithms",
     tags: ["Algorithms", "Visualization", "React"],
     image: "/projects/pathfinding.jpg",
     linkLabel: "GitHub",
@@ -66,6 +68,7 @@ export const projects = [
     eyebrow: "Claim Explorer",
     description:
       "A clean interface for reviewing claims, evidence status, topics, verdicts, and structured verification workflows.",
+    category: "System design",
     tags: ["Database", "Interface Design", "Verification"],
     image: "/projects/claim-explorer.jpg",
     hideImage: true,
@@ -79,6 +82,7 @@ export const projects = [
     eyebrow: "Physics-Informed Neural Network",
     description:
       "A Colab-based neural simulation exploring Navier-Stokes behavior through PINN field prediction, velocity quivers, error maps, and training loss analysis.",
+    category: "Research",
     tags: ["PINNs", "Navier-Stokes", "Neural Simulation"],
     image: "/projects/navier-stokes-ns-1.png",
     secondaryImage: "/projects/navier-stokes-ns-2.png",
